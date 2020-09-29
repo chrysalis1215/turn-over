@@ -13,8 +13,8 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://turn-over.cn
-root: /chrysalis1215.github.io/turn-over/
+url: https://chrysalis1215.github.io/turn-over
+root: /turn-over/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
