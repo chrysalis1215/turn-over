@@ -255,7 +255,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-29 16:49:03" itemprop="dateModified" datetime="2020-09-29T16:49:03+08:00">2020-09-29</time>
+                <time title="修改时间：2020-09-29 16:50:30" itemprop="dateModified" datetime="2020-09-29T16:50:30+08:00">2020-09-29</time>
               </span>
 
           
@@ -274,14 +274,10 @@
 <li>使用reset回滚，大量的散乱的commit中寻找要保留相关feature的commit会非常吃力；</li>
 <li>使用revert的话，由于历史提交记录不会被擦除，若未同步团队中的每一个人，很有可能会被误解。<a href="#容易误解的地方">例子：merge分支后进行revert操作</a></li>
 </ul>
-
-
+<img src="/turn-over/2020/09/25/rebase/git-flow.png" class="">
 <center>git-flow模式中的feature合入</center>
-# 如何理解git rebase?
-rebase是将一系列提交按照<font color="red">**原有次序**</font>依次应用到另一个分支上。
-详细的来说，rebase会先丢弃本地修改，以目标分支为的提交为基线，将本分支的变更，通过patch的方式，一个一个应用到自己的分支上。
-所以，rebase的过程中如果有冲突的话，会跳到一个游离的节点，直到解决完所有的冲突，git才自动会切换到原分支上； 同时这种操作也只会发生在local。
-![](rebase-init.svg)
+
+<h1 id="如何理解git-rebase"><a href="#如何理解git-rebase" class="headerlink" title="如何理解git rebase?"></a>如何理解git rebase?</h1><p>rebase是将一系列提交按照<font color="red"><strong>原有次序</strong></font>依次应用到另一个分支上。<br>详细的来说，rebase会先丢弃本地修改，以目标分支为的提交为基线，将本分支的变更，通过patch的方式，一个一个应用到自己的分支上。<br>所以，rebase的过程中如果有冲突的话，会跳到一个游离的节点，直到解决完所有的冲突，git才自动会切换到原分支上； 同时这种操作也只会发生在local。<br><img src="rebase-init.svg" alt=""></p>
 <center>git rebase效果图</center>
 
 
