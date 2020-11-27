@@ -8,7 +8,7 @@ title: rebase不再是黑魔法
 - 使用reset回滚，大量的散乱的commit中寻找要保留相关feature的commit会非常吃力；
 - 使用revert的话，由于历史提交记录不会被擦除，若未同步团队中的每一个人，很有可能会被误解。[例子：merge分支后进行revert操作](#容易误解的地方)
 
-{% asset_img git-flow.png %}
+{% asset_path ./git-flow.png %}
 <center>git-flow模式中的feature合入</center>
 
 # 如何理解git rebase?
